@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+
+footer {
+    background-color: #FF914D;
+    padding: 0 32px;
+    height: 144px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fourbank {
+    display: flex;
+    align-items: center;
+}
+.fourbank img {
+    width: 144px;
+}
+
+p {
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.redes img {
+    width: 32px;
+    margin-right: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid #FF914D;
+}
+
+.redes img:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
