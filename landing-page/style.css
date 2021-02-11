@@ -1,0 +1,98 @@
+.container{
+    height: 90vh;
+}
+
+.text1{
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: 2rem;
+    line-height: 1.16;
+    margin: 3.3%;
+    color:white;
+    margin-bottom: 5px;      
+}
+
+.text2{
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: 2rem;
+    line-height: 1.16;
+    margin: 3.3%;
+    color:#FF914D;
+    
+}
+
+a:hover::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    border: 1px solid black;
+      
+}
+
+.setas{
+    height: 15px;
+    width: 15px;
+}
+
+a{
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.btn1{
+    text-decoration: none;
+    color:#FF914D ;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5%; 
+}
+
+.btn2{
+    text-decoration: none;
+    color:white ;
+    font-family: 'Roboto', sans-serif;   
+}
+
+.img img{
+    height: 60vh;
+    
+}
+
+.pai-flex{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(seta.png);
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+}
+
+.pai-flex2{
+    background-color: #FF914D;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    height: inherit;
+    justify-content: space-around;
+   
+}
+
+.pai-flex3{
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    height: inherit;
+    justify-content: space-around;
+   
+}
+
+.pai-flex4{
+   text-align: center;
+    height: inherit;
+}
