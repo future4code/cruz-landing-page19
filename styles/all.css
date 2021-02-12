@@ -1,7 +1,24 @@
+/* Geral */
+
+* {
+  box-sizing: border-box;
+  padding: 0; 
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+
+/* Header */
 
 header a {
-    text-decoration: none;
-    color: inherit;
+  color: inherit;
 }
 
 header {
@@ -11,7 +28,7 @@ header {
   background-color: #ff914d;
   box-sizing: border-box;
 
-  position: fixed;
+  position: sticky;
   top: 0;
   padding: 0 32px;
   display: flex;
@@ -92,46 +109,41 @@ header > .button {
     align-items: center;
     justify-content: center;
   }
-
 }
 
 
+/* Main */
 
+.main-container {
+  min-height: 100vh;
+}
 
-.container{
-    height: 90vh;
+/* Textos */
+
+.text1, .text2 {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  font-size: 2rem;
+  line-height: 1.16;
+  margin: 3.3%;
 }
 
 .text1{
-    font-family: 'Hammersmith One', sans-serif;
-    font-weight: 500;
-    letter-spacing: -0.03em;
-    font-size: 2rem;
-    line-height: 1.16;
-    margin: 3.3%;
     color:white;
     margin-bottom: 5px;      
 }
 
 .text2{
-    font-family: 'Hammersmith One', sans-serif;
-    font-weight: 500;
-    letter-spacing: -0.03em;
-    font-size: 2rem;
-    line-height: 1.16;
-    margin: 3.3%;
-    color:#FF914D;
-    
+    color:#FF914D;  
 }
 
-a:hover::after {
+.main-container a:hover::after {
     content: "";
     position: absolute;
     left: 25%;
     right: 25%;
     bottom: 0;
     border: 1px solid black;
-      
 }
 
 .setas{
@@ -139,76 +151,68 @@ a:hover::after {
     width: 15px;
 }
 
-a{
+.main-container a{
     position: relative;
     font-size: 1.5rem;
 }
 
+/* Buttons  */
+
+.btn1, .btn2 {
+  font-family: 'Roboto', sans-serif;
+}
+
 .btn1{
-    text-decoration: none;
     color:#FF914D ;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 5%; 
 }
 
 .btn2{
-    text-decoration: none;
     color:white ;
-    font-family: 'Roboto', sans-serif;   
 }
 
 .img img{
-    height: 60vh;
-    
+    height: 60vh; 
 }
 
+/* Pai flex */
+
 .pai-flex{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-image: url(seta.png);
-    background-size: cover;
-    height: 80vh;
-    background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url(../img/seta.png);
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+}
+
+.pai-flex2, .pai-flex3 {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  justify-content: space-around;
 }
 
 .pai-flex2{
     background-color: #FF914D;
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    height: inherit;
-    justify-content: space-around;
-   
 }
 
 .pai-flex3{
     background-color: rgb(245, 244, 244);
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    height: inherit;
-    justify-content: space-around;
-   
 }
 
 .pai-flex4{
-   text-align: center;
-    height: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-*{
-    box-sizing: border-box;
-    padding: 0; 
-    margin: 0;
-}
+/* Footer */
 
 footer {
     background-color: #FF914D;
     padding: 0 32px;
-    height: 144px; 
+    min-height: 100px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,7 +223,7 @@ footer {
     align-items: center;
 }
 .fourbank img {
-    width: 144px;
+    width: 100px;
 }
 
 footer p {
@@ -230,7 +234,7 @@ footer p {
     color: rgb(255, 255, 255);
 }
 
-p:last-child {
+footer p:last-child {
     margin-bottom: 0;
 }
 
@@ -243,4 +247,38 @@ p:last-child {
 
 .redes img:hover {
     border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+/* Media queries */
+
+@media only screen and (min-width: 414px) and (max-width:736px) {
+
+  header {
+    height: 60px;
+  }
+
+  header > img {
+    width: 150px;
+    height: 100px;
+    margin-left: -50px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  /* Textos */
+
+  .text1, .text2 {
+    order: 1;
+    font-size: 1.70em;
+  }
+
+  /* Containers */
+
+  .pai-flex2, .pai-flex3 {
+    flex-direction: column;
+  }
+
 }
