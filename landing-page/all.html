@@ -11,6 +11,20 @@
 </head>
 <body>
 
+  <div id="overlay" class="overlay">
+    <div class="close" onclick="closeNav()">&times;</div>
+    <img src="../img/logo-removebg-preview (1).png" alt="logo">
+
+    <div class="overlay-nav">
+      <a href="#" >Inicio</a>
+      <a href="" >Conta Digital</a>
+      <a href="" >Cartão de Crédito</a>
+      <a href="" >Pix</a>
+      <a href="" >Emprestimo</a>
+      <a href="" >Sobre Nós</a>
+    </div>
+  </div>
+
   <header>
     <img src="../img/logo-removebg-preview (1).png" alt="logo" />
     <nav>
@@ -25,12 +39,12 @@
     <div class="button" onclick="openNav()">&#9776;</div>
   </header>
     
-<div class="container">
-    <div class="pai-flex"> 
-        <div class="text1">
-        <a href="" class="btn1">Saiba como funciona<img src="../img/prox.png" alt="" class="setas"></a> </div>  
-    </div>
-</div>
+  <div class="container">
+      <div class="pai-flex"> 
+          <div class="text1">
+          <a href="" class="btn1">Saiba como funciona<img src="../img/prox.png" alt="" class="setas"></a> </div>  
+      </div>
+  </div>
 
     
   <div class="main-container">
@@ -84,8 +98,18 @@
       </div>
     </footer>
 
+    <script>
+      function openNav() {
+        document.getElementById("overlay").style.height = "100vh";
+        document.getElementById("overlay").style.display = "flex";
+      }
+
+      function closeNav() {
+        document.getElementById("overlay").style.height = "0vh";
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
   </body>
 
 </html>
-
 
