@@ -71,7 +71,7 @@ nav {
   color: #ff914d;
 }
 
-header > img {
+header img {
   flex-grow: 0;
   width: 200px;
   height: 150px;
@@ -144,6 +144,27 @@ header > .button {
 
 .btn1, .btn2 {
   font-family: 'Roboto', sans-serif;
+  transition: 0.8s;
+}
+
+.pai-flex .btn1:hover {
+  font-size: 1.1em;
+  transition: all 1s;
+}
+
+.pai-flex2 .btn2:hover {
+  font-size: 28px;
+  transition: all 1s;
+}
+
+.pai-flex3 .btn1:hover {
+  font-size: 28px;
+  transition: all 1s;
+}
+
+.pai-flex4 .btn1:hover {
+  font-size: 28px;
+  transition: all 1s;
 }
 
 .btn1{
@@ -154,8 +175,15 @@ header > .button {
     color:white ;
 }
 
+/* Imagens */
+
 .img img{
     height: 60vh; 
+}
+
+.pai-flex4 .img img{
+  width: 100%;
+  height: 100%;
 }
 
 /* Pai flex */
@@ -240,7 +268,7 @@ footer p:last-child {
 /* Media queries */
 
 
-@media only screen and (min-width: 414px) and (max-width:736px) {
+@media only screen and (min-width: 300px) and (max-width:736px) {
 
   header {
     height: 60px;
