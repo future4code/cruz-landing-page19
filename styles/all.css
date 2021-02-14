@@ -1,4 +1,4 @@
-/* Geral */
+/* Geral ----------------------------- ----------------------------- ----------------------------- ----------------------------- */
 
 * {
   box-sizing: border-box;
@@ -22,7 +22,7 @@ body {
   display: none;
 }
 
-/* Header */
+/*Header ----------------------------- ----------------------------- ----------------------------- ----------------------------- */
 
 header a {
   color: inherit;
@@ -94,7 +94,7 @@ header > .button {
 }
 
 
-/* Main */
+/* Main ----------------------------- ----------------------------- ----------------------------- ----------------------------- */
 
 .main-container {
   min-height: 100vh;
@@ -102,7 +102,50 @@ header > .button {
   max-width: 100vw;
 }
 
-/* Textos */
+/* Pai flex ------------------------*/
+
+.pai-flex{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url(../img/seta.png);
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+  max-width: 100vw;
+}
+
+.pai-flex2, .pai-flex3 {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  justify-content: space-around;
+  max-width: 100vw;
+}
+
+.pai-flex2{
+    background-color: #FF914D;
+}
+
+.pai-flex3{
+    background-color: rgb(245, 244, 244);
+}
+
+.pai-flex4{
+  max-width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato {
+  margin-top: -6px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Textos ------------------*/
 
 .text1, .text2 {
   font-weight: 500;
@@ -140,7 +183,7 @@ header > .button {
     font-size: 1.5rem;
 }
 
-/* Buttons  */
+/* Buttons  --------------*/
 
 .btn1, .btn2 {
   font-family: 'Roboto', sans-serif;
@@ -175,7 +218,7 @@ header > .button {
     color:white ;
 }
 
-/* Imagens */
+/* Imagens --------------------*/
 
 .img img{
     height: 60vh; 
@@ -186,43 +229,48 @@ header > .button {
   height: 100%;
 }
 
-/* Pai flex */
+/* Contato ---------------- */
 
-.pai-flex{
+.contato > h2 {
+  background-color: #FF914D;
+  color: white;
+  padding: 120px 150px;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  background-image: url(../img/seta.png);
-  background-size: cover;
-  height: 80vh;
-  background-position: center;
-  max-width: 100vw;
+
+  box-sizing: border-box;
+  font-size: 3rem;
+  height: 50vh;
+  font-weight: 500;
 }
 
-.pai-flex2, .pai-flex3 {
+.contato-container {
+  box-sizing: border-box;
+  padding: 70px 140px;
   display: flex;
-  align-items: center;
-  height: 90vh;
-  justify-content: space-around;
-  max-width: 100vw;
 }
 
-.pai-flex2{
-    background-color: #FF914D;
+.contato-container h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.pai-flex3{
-    background-color: rgb(245, 244, 244);
+.contato-container p {
+  font-weight: 300;
+  box-sizing: border-box;
+  padding-right: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-.pai-flex4{
-  max-width: 100vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+.contato-container a  {
+  font-size: 1.1em;
+  color: #FF914D;
 }
 
-/* Footer */
+
+/* Footer ----------------------------- ----------------------------- ----------------------------- ----------------------------- */
 
 footer {
     background-color: #FF914D;
@@ -265,7 +313,7 @@ footer p:last-child {
 }
 
 
-/* Media queries */
+/* Media queries ----------------------------- ----------------------------- ----------------------------- ----------------------------- */
 
 
 @media only screen and (min-width: 300px) and (max-width:736px) {
@@ -309,20 +357,38 @@ footer p:last-child {
     flex-direction: column;
   }
 
-  /* Textos */
+  /* Contato ------------------*/
+
+  .contato > h2 {
+    height: 10vh;
+    align-items: center;
+    font-size: 2rem;
+    padding: 90px 50px;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    padding: 30px 50px;
+  }
+
+  .contato-container >  div{
+    padding-bottom: 30px;
+  }
+
+  /* Textos -------------------*/
 
   .text1, .text2 {
     order: 1;
     font-size: 1.70em;
   }
 
-  /* Containers */
+  /* Containers -----------------*/
 
   .pai-flex2, .pai-flex3 {
     flex-direction: column;
   }
 
-  /* img */
+  /* img ---------------------------*/
 
   .img{
     object-fit: contain;
@@ -333,7 +399,7 @@ footer p:last-child {
     height: 100%;
   }
 
-  /* Overlay */
+  /* Overlay ---------------------------*/
 
   .overlay {
     position: fixed;
