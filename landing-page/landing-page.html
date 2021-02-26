@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto&display=swap" rel="stylesheet">  
+    <title>F4Bank</title>
+</head>
+<body>
+
+  <div id="overlay" class="overlay">
+    <div class="close" onclick="closeNav()">&times;</div>
+    <a href="./landing-page.html"><img src="../img/logo-removebg-preview (1).png" alt="logo"></a>
+
+    <div class="overlay-nav">
+      <a href="#" >Inicio</a>
+      <a href="" >Conta Digital</a>
+      <a href="" >Cartão de Crédito</a>
+      <a href="" >Pix</a>
+      <a href="" >Emprestimo</a>
+      <a href="" >Sobre Nós</a>
+    </div>
+  </div>
+
+  <header>
+    <a href="./landing-page.html"><img src="../img/logo-removebg-preview (1).png" alt="logo" /></a>
+    <nav>
+      <a href="#" class="inicio">Inicio</a>
+      <a href="" class="nav-link">Conta Digital</a>
+      <a href="" class="nav-link">Cartão de Crédito</a>
+      <a href="" class="nav-link">Pix</a>
+      <a href="" class="nav-link">Emprestimo</a>
+      <a href="" class="nav-link">Sobre Nós</a>
+    </nav>
+    <a href="" class="login">Login</a>
+    <div class="button" onclick="openNav()">&#9776;</div>
+  </header>
+    
+  <div class="container">
+      <div class="pai-flex"> 
+          <div class="text1">
+          <a href="" class="btn1">Saiba como funciona<img src="../img/prox.png" alt="" class="setas"></a> </div>  
+      </div>
+  </div>
+
+    
+  <div class="main-container">
+    <div class="pai-flex2">
+        <div class="text1">
+          <p>Cartão sem taxa<br>
+              Pode chamar ele de
+              laranjinha.<br> Além disso,
+              pode chamar ele de
+              moderno, gratuito e
+              prático também.</p>
+          <a href="" class="btn2">Peça o seu <img src="../img/prox.png" alt="" class="setas"></a> 
+        </div>
+        <div class="img"> <img src="../img/card.jpg" alt=""></div>
+      </div>
+      
+        <div class="pai-flex3">
+          <div class="text2">
+          <p>Conta corrente digital</p>
+          <a href="" class="btn1">Saiba como funciona<img src="../img/prox.png" alt="" class="setas"></a> </div>
+          <div class="img"> <img src="../img/maos.png" alt=""></div>
+        </div>
+    
+      <div class="pai-flex4">
+          <div class="text2">
+          <p>F4Community<br>
+            A comunidade
+            oficial do F4bank</p>
+          <a href="" class="btn1">Venha fazer parte!<img src="../img/prox.png" alt="" class="setas"></a> </div>
+          <div class="img"> <img src="../img/community.png" alt="" class="cm"></div>
+      </div>
+
+      <div class="contato">
+          <h2>Como você prefere se comunicar?</h2>
+          <div class="contato-container">
+            <div class="email">
+              <h3>Email</h3>
+              <p>Tem alguma dúvida? Podemos te ajudar pelo nosso canal de email.</p>
+              <a href="">atendimento@f4bank.com.br <img src="../img/prox.png" alt="" class="setas"></a>
+            </div>
+            <div class="telefone">
+              <h3>Telefone</h3>
+              <p>Você pode ligar a qualquer hora através do número abaixo.</p>
+              <a href="">0800 999 9999 <img src="../img/prox.png" alt="" class="setas"></a>
+            </div>
+            <div class="chat">
+              <h3>Chat</h3>
+              <p>Precisa de uma ajuda agora? Entre em contato com nosso atendimento através do chat.</p>
+              <a href="">Atendimento Online <img src="../img/prox.png" alt="" class="setas"></a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+        
+    <footer>
+      <div class="fourbank">
+        <a href="./landing-page.html"><img src="../img/f4bank.png"/></a>
+        <div>
+          <p>@ 2021 F4Bank Pagamento S.A</p>
+          <p>Mundão, Brasil, Alemanha</p>
+        </div>
+      </div>
+
+      <div class="redes">
+        <a href="#" target="_blank"><img src="../img/facebook-brands.svg" alt=""></a>
+        <a href="#" target="_blank"><img src="../img/instagram-brands.svg" alt=""></a>
+        <a href="#" target="_blank"><img src="../img/linkedin-brands.svg" alt=""></a>
+        <a href="#" target="_blank"><img src="../img/twitter-brands.svg" alt=""></a>
+        <a href="#" target="_blank"><img src="../img/youtube-brands.svg" alt=""></a>
+      </div>
+    </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("overlay").style.height = "100vh";
+        document.getElementById("overlay").style.display = "flex";
+      }
+
+      function closeNav() {
+        document.getElementById("overlay").style.height = "0vh";
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
+  </body>
+
+</html>
+
